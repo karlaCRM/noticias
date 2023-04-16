@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4" *ngFor="let noticia of listadoNoticias">
+      <div class="card">
+        <div class="card-body  text-center ">
+          <p class="badge bg-primary text-uppercase mb-2 mt-1 ">{{noticia.author}}</p>
+          <p class=" text-wrap text-capitalize fw-bold fs-5">{{noticia.title}}</p>
+         
+          <a [href]="noticia.url" target="_blank" class=" mt-2 btn btn-primary btn-lg btn-block">Ver noticia...</a>
+        </div>
+      </div>
+    </div>
+  </div>
