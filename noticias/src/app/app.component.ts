@@ -19,7 +19,7 @@ constructor(private _noticiaService : NoticesService){
 buscarNoticias(parametros: any){
   this.loading= true;
   this.listNoticias = [];
-setTimeout(() => {
+
   this._noticiaService.getNoticias(parametros).subscribe({
     next: (data) =>{ console.log(data)
    
@@ -33,7 +33,7 @@ setTimeout(() => {
      }
    
    })
-}, 1000);
+
 
 
 
